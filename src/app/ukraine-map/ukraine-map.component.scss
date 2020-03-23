@@ -1,0 +1,29 @@
+svg {
+    max-height: 1000px;
+
+    flex-grow: 1;
+}
+
+.city { // g === .city
+
+    clip: auto;
+    transform-origin: center;
+    transform-box: fill-box;
+
+    display: inline-block;
+
+    transition: all 0.4s ease-out;
+    z-index: 0;
+    &:hover {
+        transform: scale(2.2);
+
+        fill: red;
+
+        z-index: 1000;
+    }
+
+
+    &[hide=true] {
+        opacity: 0.3;
+    }
+}

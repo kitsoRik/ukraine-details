@@ -1,0 +1,9 @@
+<div class="loadingBar" *ngIf="isLoading">
+    LOADING
+</div>
+
+<ng-container *ngIf="!isLoading">
+    <button (click)="changeQuality()">{{ imageQuality === "MAX_QUALITY" ? "Знизити якість" : "Підвищити якість" }}</button>
+    <app-city-info></app-city-info>
+    <app-ukraine-map></app-ukraine-map>
+</ng-container>
